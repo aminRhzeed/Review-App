@@ -12286,6 +12286,17 @@ article h5 + figure {
   color: #004785;
   border-color: #004785;
 }
+.btn-info {
+  color: #fff;
+  border-color: #004785;
+  background-color: #004785;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #003c70;
+  border-color: #004785;
+  transition: .4s;
+}
 .btn-outline-info:hover {
   color: #fff;
   background-color: #004785;
@@ -12296,9 +12307,19 @@ article h5 + figure {
   color: #54565A;
   border-color: #54565A;
 }
+.btn-dark {    
+  color: #fff;
+  border-color: #54565A;
+  background-color: #54565A;
+}
 .btn-outline-dark:hover {
   color: #fff;
   background-color: #54565A;
+  border-color: #54565A;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #48494c;
   border-color: #54565A;
 }
 @media (min-width: 1200px) {
