@@ -158,7 +158,11 @@ var Swipes = new Swiper('.tabs-swiper', {
         centeredSlides: false,
         spaceBetween: 30,
         grabCursor: true,
-        loop: false
+        loop: false,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
     });
 
 // picture issue in safari
@@ -186,4 +190,20 @@ if(navigator.userAgent.indexOf('Safari') !=-1 && navigator.userAgent.indexOf('Ch
 
 }
 
+// GO to Top
+
+let gtop = $('#gotoTop');
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+    gtop.addClass('show');
+    } else {
+    gtop.removeClass('show');
+    }
+});
+
+gtop.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+});
 

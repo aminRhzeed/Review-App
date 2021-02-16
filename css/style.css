@@ -13027,7 +13027,11 @@ img.section-01 {
   .tabs-swiper {
     margin: 0 -15px;
   }
+  .h-control {
+    min-height: 300px !important;
+  }
   .jumbotron.doctor {
+    background-image: url(../img/doctor.png)!important;
     background-size: cover;
     background-position-x: 30%;
   }
@@ -13337,6 +13341,46 @@ img.section-01 {
   }
 }
 
+
+/* go to top */
+
+a#gotoTop {
+  display: flex;
+  background-color: #2764ce;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 0.375rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1052;
+  -webkit-box-shadow: 0 0rem 1.5rem rgba(39, 100, 206, 0.3);
+  -moz-box-shadow: 0 0rem 1.5rem rgba(39, 100, 206, 0.3);
+  -o-box-shadow: 0 0rem 1.5rem rgba(39, 100, 206, 0.3);
+  box-shadow: 0 0rem 1.5rem rgba(39, 100, 206, 0.3);
+}
+
+a#gotoTop img {
+  width: 24px;
+}
+
+a#gotoTop:hover {
+  cursor: pointer;
+  background-color: #2156b0;
+}
+
+a#gotoTop:active {
+  background-color: #2156b0;
+}
+
+a#gotoTop.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
